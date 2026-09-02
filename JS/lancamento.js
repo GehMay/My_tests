@@ -15,7 +15,7 @@ async function carregarLivrosNaTela() {
                 <article class="card">
                     <div class="card-banner" aria-hidden="true"></div>
                     <div class="card-body">
-                        <h3 class="card-title">${livro.titulo}</h3>
+                        <h6 class="book-title">${livro.titulo}</h6>
                         <span class="badge">${livro.categoria || 'Geral'}</span>
                         <p class="card-descricao">
                             <strong>Autor:</strong> ${livro.autor} <br>

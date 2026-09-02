@@ -12,7 +12,7 @@
     <header class="cabecalho">
         <a href="index.html" class="cabecalho_logo">Pandora Livraria & Café</a>
         <nav class="cabecalho_nav">
-            <a href="index.html">Tome seu café enquanto lê</a>
+            <a href="index.html">Tome seu café enquanto lê seus livros favoritos</a>
         </nav>
     </header>
     <main class="container">
@@ -20,7 +20,29 @@
         <p class="subtitulo-pagina">Loja localizada em: <br> Rua das Camélias, 245 – Bairro Jardim Primavera, São Paulo
             – SP, CEP 04567-890</p>
 
-        <div class="cards-grid" id="meus-lancamentos"></div>
+        <div class="card-grids">
+            <h3>Destaques da Loja</h3>
+            <p>Veja os nossos Lançamentos:</p>
+        </div>
+        <!-- 2. A ÁREA DOS LIVROS (Debaixo do título) -->
+        <!-- O JavaScript vai jogar os livros apenas AQUI DENTRO -->
+        <div class="cards-grid" id="meus-lancamentos">
+
+        </div>
+        <!-- 3. O MOLDE DO LIVRO (Fica escondido) -->
+        <template id="molde-livro">
+            <article class="card">
+                <div class="card-banner" aria-hidden="true">📚</div>
+                <div class="card-body">
+                    <h6 class="book-title">Título do Livro</h6>
+                    <span class="badge categoria-livro">Categoria</span>
+                    <p class="card-descricao">
+                        Autor: <span class="autor-livro"></span> <br>
+                        Preço: R$ <span class="preco-livro"></span>
+                    </p>
+                </div>
+            </article>
+        </template>
         <div class="cards-grid">
             <article class="card" data-categoria="Promocoes">
                 <div class="card-banner" aria-hidden="true"></div>
@@ -50,21 +72,27 @@
                     <p class="card-descricao">Insira o texto aqui</p>
                 </div>
             </article>
-        </div>
+        </div><br>
         <div class="cards-grid">
-            <article class="card" data-categoria="SAIBA MAIS SOBRE A LOJA">
+            <article class="card" data-categoria="Dados da Loja">
                 <div class="card-banner" aria-hidden="true"></div>
                 <div class="card-body">
-                    <h3 class="card-title">Saiba mais sobre a Loja</h3>
-                    <span class="badge">Horário de Funcionamento</span>
-                    <p class="card-descricao">Segunda a sexta: 9h às 20h <br>
-                        Sábado: 9h às 18h <br>
-                        Domingo: 10h às 16h</p>
+                    <h3 class="card-title">Dados da Loja</h3><br>
+                    <p class="card-descricao">Nome: Pandora Livraria & Café <br>
+                        Endereço: Rua das Camélias, 245 – Bairro Jardim Primavera, São Paulo – SP, CEP 04567-890 <br>
+                        Telefone: (11) 3456-7890<br>
+                        WhatsApp: (11) 91234-5678<br>
+                        E-mail: contato@pandoralivraria.com.br<br>
+                        Instagram: @pandora.livraria</p><br>
                     <span class="badge">Nossa história</span>
                     <p class="card-descricao">Fundada em 2015 por dois irmãos apaixonados por literatura, a Pandora
                         começou como um sebo pequeno e foi crescendo até virar uma livraria completa com cantinho de
                         café. O diferencial é o clima aconchegante — poltronas, luz baixa, plantas — pensado pra quem
-                        quer ficar horas folheando livro antes de comprar.</p>
+                        quer ficar horas folheando livro antes de comprar.</p><br>
+                    <span class="badge">Horário de Funcionamento</span>
+                    <p class="card-descricao">Segunda a sexta: 9h às 20h <br>
+                        Sábado: 9h às 18h <br>
+                        Domingo: 10h às 16h</p>
                 </div>
             </article>
         </div>

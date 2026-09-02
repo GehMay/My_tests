@@ -10,11 +10,10 @@ const crypto = require('crypto');
 const mysql = require('mysql2');
 
 const conexao = mysql.createConnection({
-  host: 'shuttle.proxy.rlwy.net', // <--- Aponta para a internet
+  host: 'localhost',
   user: 'root',
-  password: 'wyeuZrMvSuEOZQhobgCXFZHQwijffyOu',
-  database: 'railway',
-  port: 13859 // Número da "porta" de acesso
+  password: '83194117Geovanna@', // Sua senha local
+  database: 'pandora_livraria'
 });
 
 conexao.connect((erro) => {
