@@ -27,18 +27,31 @@ O sistema final permitirá que os clientes naveguem pelo acervo da loja, vejam o
 - [ ] **Sistema de Reservas:** Interface para o usuário autenticado selecionar livros para retirada presencial.
 - [ ] **Painel Administrativo (`painel-admin.html`):** Área restrita para funcionários gerenciarem o estoque e as promoções.
 
-## 🗄️ Estrutura do Banco de Dados
-A arquitetura relacional do sistema é estruturada pelas seguintes entidades:
-* `Usuario`: Gerencia as credenciais de clientes e administradores.
-* `Livro`: Catálogo contendo título, autor, categoria, preço, estoque, métricas de avaliação e total de vendas.
-* `Reserva` & `Reserva_Livro`: Tabelas responsáveis pelo controle "Muitos-para-Muitos" das reservas feitas pelos clientes.
-* `Promocao`: Controle de campanhas ativas (tipo café, livraria ou mista) com validade (data de início e fim).
+## 📂 Estrutura do Projeto
+
+Abaixo está o mapa para você se encontrar dentro dos arquivos do projeto:
+
+```text
+📁 Raiz
+ ├── 📁 CSS
+ │    └── 📄 style.css              # Estilos visuais da página
+ ├── 📁 JS
+ │    └── 📄 lancamento.js          # Lógica frontend (consumo das APIs)
+ ├── 📁 dados
+ │    └── 📄 *.json                 # Arquivos temporários (fallback)
+ ├── 📁 database
+ │    └── 📄 setup.sql              # Script oficial de criação do Banco de Dados
+ ├── 📄 index.html                  # Página inicial da loja
+ ├── 📄 servidor-estatico.js        # Backend (Servidor Node.js e rotas de API)
+ ├── 📄 GUIA-SERVIDOR.md            # Documentação técnica de como o Node funciona
+ └── 📄 README.md                   # Esta documentação
+```
 
 ## 💻 Como Rodar o Projeto Localmente
 
 1. **Configuração do Banco de Dados:**
-   * Abra o MySQL Workbench e crie o schema `pandora_livraria`.
-   * Execute os scripts de `CREATE TABLE` e `INSERT` para popular o banco inicial.
+   * Abra o MySQL Workbench.
+   * Abra e execute o arquivo `database/setup.sql` que está na raiz do projeto. Ele vai criar o schema `pandora_livraria` e popular com dados de teste.
 2. **Configuração do Servidor:**
    * Abra o arquivo `servidor-estatico.js` e atualize as variáveis da conexão MySQL (usuário e senha) para corresponderem ao seu ambiente local.
 3. **Execução:**
