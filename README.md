@@ -61,3 +61,7 @@ Abaixo está o mapa para você se encontrar dentro dos arquivos do projeto:
 
 ---
 *Desenvolvido com dedicação por Geovanna como projeto prático de aprimoramento em Desenvolvimento Web Full-Stack.*
+
+---
+*Licenças*
+<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
