@@ -60,4 +60,4 @@ Abaixo está o mapa para você se encontrar dentro dos arquivos do projeto:
    * Abra seu navegador e acesse: `http://localhost:5500`.
 
 ---
-*Desenvolvido com dedicação por Geovana como projeto prático de aprimoramento em Desenvolvimento Web Full-Stack.*
+*Desenvolvido com dedicação por Geovanna como projeto prático de aprimoramento em Desenvolvimento Web Full-Stack.*
