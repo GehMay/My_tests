@@ -14,7 +14,7 @@ O sistema final permitirá que os clientes naveguem pelo acervo da loja, vejam o
 
 ## 🚀 Funcionalidades do Sistema
 
-### 🟢 O que já está implementado (MVP)
+### 🟢 O que já está sendo implementado no momento (MVP)
 - [x] **Vitrine Dinâmica:** Renderização de lançamentos alimentados diretamente pelo banco de dados MySQL usando a tag `<template>` do HTML e manipulação segura via JavaScript.
 - [x] **API Backend:** Servidor próprio capaz de hospedar arquivos estáticos e prover rotas RESTful de dados.
 - [x] **Interface Gráfica:** Design responsivo e limpo baseado no conceito de *Cards*.
