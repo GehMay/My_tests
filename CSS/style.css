@@ -6,24 +6,25 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #b6ffff;
+    background-color: #e8f0ec; /* Fundo prata/cinza esverdeado bem claro */
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 
 .cabecalho {
-    background-color: #46acff;
+    background-color: #1a472a; /* Verde escuro Sonserina */
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #000;
+    color: #ffffff;
     border-radius: 0 0 50px 50px;
+    border-bottom: 4px solid #5d5d5d; /* Detalhe em Prata */
 }
 
 .cabecalho_nav p {
     font-size: 1rem;
-    color: #313131;
+    color: #c4d4cc; /* Prata esverdeado */
 }
 
 .titulo-pagina {
@@ -31,7 +32,7 @@ body {
     margin: 2rem 0;
     padding: 0 2px 0 2px;
     border-radius: 50px;
-    background-color: #559dd8;
+    background-color: #2a623d; /* Verde Sonserina secundário */
     color: #ffffff;
 }
 
@@ -76,8 +77,8 @@ body {
 
 /* Novo estilo para os cartões de dentro (os livros) */
 .card-interno {
-    background-color: #d8f5f5; /* Um ciano muito clarinho, no clima do site */
-    border: 1px solid #559dd8; /* Bordinha azul da mesma cor do título */
+    background-color: #f4f7f6; /* Fundo quase branco, levemente prateado */
+    border: 1px solid #1a472a; /* Borda Verde Sonserina */
     border-radius: 8px;
     padding: 0.5rem;
     display: flex;
@@ -87,5 +88,5 @@ body {
 
 .card-interno:hover {
     transform: translateY(-4px); /* Sobe um pouquinho ao passar o mouse */
-    box-shadow: 0 4px 8px rgba(85, 157, 216, 0.3); /* Sombra azuladinha */
+    box-shadow: 0 4px 8px rgba(26, 71, 42, 0.4); /* Sombra verde Sonserina */
 }

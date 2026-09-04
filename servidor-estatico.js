@@ -11,8 +11,8 @@ const mysql = require('mysql2');
 
 const conexao = mysql.createConnection({
   host: 'localhost',
-  user: 'root',
-  password: '83194117Geovanna@', // Sua senha local
+  user: 'pandora_app', // O novo usuário que só tem acesso a este projeto
+  password: 'pandora123', // A senha do projeto
   database: 'pandora_livraria'
 });
 
