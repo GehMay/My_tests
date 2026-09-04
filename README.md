@@ -14,7 +14,7 @@ O sistema final permitirá que os clientes naveguem pelo acervo da loja, vejam o
 
 ## 🚀 Funcionalidades do Sistema
 
-### 🟢 O que já está implementado (MVP)
+### 🟢 O que já está sendo implementado no momento (MVP)
 - [x] **Vitrine Dinâmica:** Renderização de lançamentos alimentados diretamente pelo banco de dados MySQL usando a tag `<template>` do HTML e manipulação segura via JavaScript.
 - [x] **API Backend:** Servidor próprio capaz de hospedar arquivos estáticos e prover rotas RESTful de dados.
 - [x] **Interface Gráfica:** Design responsivo e limpo baseado no conceito de *Cards*.
@@ -60,4 +60,8 @@ Abaixo está o mapa para você se encontrar dentro dos arquivos do projeto:
    * Abra seu navegador e acesse: `http://localhost:5500`.
 
 ---
-*Desenvolvido com dedicação por Geovana como projeto prático de aprimoramento em Desenvolvimento Web Full-Stack.*
+*Desenvolvido com dedicação por Geovanna como projeto prático de aprimoramento em Desenvolvimento Web Full-Stack.*
+
+---
+*Licenças*
+<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
