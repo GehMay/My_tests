@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+@keyframes flutuar{
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+}
+
+.varinha {
+    animation: flutuar 2s ease-in-out infinite; 
+    /* nome  duração  ritmo         repetição */
+    font-size: 3rem;
+    text-align: center;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #e8f0ec; /* Fundo prata/cinza esverdeado bem claro */
